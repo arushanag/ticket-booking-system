@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ticket Booking System</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Ticket Booking System</h1>
+        </header>
+        
+        <main class="container">
+
+            <!-- Issued Tickets-->
+             <section class="issued-tickets">
+                <h2>Issued Tickets</h2>
+                <!-- List of peoples who have issued tickets -->
+                 <ul id="ticket-queue"></ul>
+             </section>
+
+             <!-- Booking Form Section -->
+             <section class="booking-form">
+                <h2>Book a Ticket</h2>
+                <form id="form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="seat">Seat Number:</label>
+                    <input type="text" id="seat" name="seat" required>
+                    <button type="submit">Book Ticket</button>
+                </form>
+             </section>
+
+             <!-- Booking History Section-->
+             <section class="booking-history">
+                <h2>Booking History</h2>
+                <!-- List of peoples who have booked tickets-->
+                <ul id="booking-list"></ul>
+             </section>
+        </main> 
+    </body>
+</html>

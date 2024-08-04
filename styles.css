@@ -1,0 +1,80 @@
+/* General styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: black;
+    background: url('../ticket-booking-system/img/bg-image.jpg') ;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+header {
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+}
+
+/* Layout styles */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+}
+
+section {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px #000;
+    flex: 1;
+    margin: 0 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 8px 0 4px 0;
+}
+
+input[type="text"] {
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+button {
+    background-color: #5c4595;
+    color: #fff;
+    border: none;
+    box-shadow: 0 2px 4px #000;
+    border-radius: 4px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e585cc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    section {
+        margin: 16px 0;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
